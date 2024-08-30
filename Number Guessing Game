@@ -1,0 +1,21 @@
+print("Guess the number between 1 and 100")
+print("0 for quit game")
+guess_num = 55
+count = 0
+while True:
+    user = int(input("Your guess: "))
+    count += 1
+    if user == 0:
+        print("You can try next time")
+        break
+    elif user < guess_num:
+        print("Too low! Try again.")
+    elif user > guess_num:
+        print("Too high! Try again.")
+    elif user == guess_num:
+        print("Congratulations! You guessed the number correctly.")
+        print(f"you have used {count} chances to guess the number")
+    else:
+        print("please give input correctly ")
+        break
+    
